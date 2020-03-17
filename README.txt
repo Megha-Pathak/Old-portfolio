@@ -1,3 +1,2 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/mpathak/pen/vrzLYm.
-
+This is personal website of Megha Pathak.
  
