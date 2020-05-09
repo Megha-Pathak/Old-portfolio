@@ -495,23 +495,23 @@ a.active {
 /* ======= INTRODUCTION ======= */
 
 #intro {
-    background: url(../img/mountain-dusk.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: url(../img/coder.png);;
+    /*background image source is Dribbble*/
+    background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
-    background-color: #000;
-    color: #000;
+    background-color: #fff;
+    color: #fff;
 }
 
 #intro .overlay {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
     /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.4)));
     /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: -o-linear-gradient(top, rgba(12, 12, 12, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
     /* Opera 11.10+ */
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
     /* IE10+ */
@@ -525,9 +525,9 @@ a.active {
 
 #intro h1 {
     color: #FFF;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 300;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 #intro p.subtitle {
@@ -536,7 +536,14 @@ a.active {
 
 .intro-content {
     position: absolute;
-    padding: 20% 0 5% 0;
+    padding: 13% 50% 5% 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.scroll-intro {
+    position: absolute;
+    padding: 25% 0 5% 0;
     left: 0;
     right: 0;
     z-index: 0;
@@ -776,7 +783,7 @@ a.fa.fa-angle-down:focus {
     height: 175px;
     line-height: 175px;
     max-width: 100%;
-    background: #00009C;
+    background: rgb(0, 48, 219);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -965,21 +972,7 @@ a.fa.fa-angle-down:focus {
 }
 
 
-/*.progressred {
-    background-color: #c0392b;
-}
-.progressblue {
-    background-color: #1199ff;
-}
-.progresspurple {
-    background-color: #9b59b6;
-}
-.progressorange {
-    background-color: orange;
-}
-.progressgreen {
-    background-color: #27ae60;
-}*/
+
 
 @-webkit-keyframes progress-1 {
     0% {
@@ -1497,164 +1490,6 @@ a.resume-btn:active {
     margin: 0;
 }
 
-
-/*#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: rgba(0, 0, 0, .8);
-    -webkit-transition: all ease .3s;
-    -moz-transition: all ease .3s;
-    transition: all ease .3s;
-}*/
-
-
-/*
-#portfolio .portfolio-item {
-    margin: 0 0 35px 0;
-}
-
-@media screen and (max-width: 1200px) {
-    #portfolio .portfolio-item {
-        margin: 15px 0;
-    }
-}
-
-#portfolio .portfolio-image {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-@media screen and (min-width: 1300px) {
-    #portfolio .portfolio-image {
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #portfolio .portfolio-image {
-        height: 100%;
-    }
-}
-
-.portfolio-item .portfolio-hover {
-    height: 180px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-@media screen and (min-width: 1440px) {
-    portfolio .portfolio-image {
-        max-width: 400px;
-    }
-    .portfolio-item .portfolio-hover {
-        max-width: 400px;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    #portfolio .portfolio-hover {
-        height: 200px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .portfolio-item .portfolio-hover {
-        height: 100%;
-    }
-}
-
-.portfolio-item .portfolio-hover img {
-    margin: 0 auto;
-}
-
-.portfolio-hover .hover-text {
-    position: absolute;
-    text-align: center;
-    margin: 0 auto;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15% 0;
-    width: 100%;
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.portfolio-hover:hover .hover-text {
-    opacity: 1;
-}
-
-.portfolio-hover .hover-text > h4 {
-    opacity: 0;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    transition: all 0.3s;
-}
-
-.portfolio-hover:hover .hover-text > h4 {
-    opacity: 1;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-}
-
-.portfolio-hover .hover-text > h6 {
-    text-transform: capitalize;
-    font-style: italic;
-    font-weight: 300;
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    transition: all 0.3s;
-}
-
-.portfolio-hover:hover .hover-text > h6 {
-    opacity: 1;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-@media screen and (max-width: 360px) {
-    .portfolio-hover .hover-text > h4 {
-        font-size: 14px;
-    }
-    .portfolio-hover .hover-text > h6 {
-        font-size: 12px;
-    }
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: rgba(0, 0, 0, .8);
-    -webkit-transition: all ease .3s;
-    -moz-transition: all ease .3s;
-    transition: all ease .3s;
-}
-
-#portfolio * {
-    z-index: 2;
-}
-
-@media screen and (max-width: 767px) {
-    #portfolio .portfolio-item {
-        margin-bottom: 30px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #portfolio {
-        padding: 60px 0px;
-    }
-}
-*/
 
 
 /* ======= CONTACT ======= */
