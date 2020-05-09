@@ -505,7 +505,7 @@ a.active {
 }
 
 #intro .overlay {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
     /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.4)));
     /* Chrome,Safari4+ */
@@ -1137,9 +1137,19 @@ a.fa.fa-angle-down:focus {
     padding-bottom: 15px;
     height: 120px;
 }
+.employment .skill-icon {
+    padding-bottom: 15px;
+    height: 120px;
+}
 
 @media screen and (max-width: 360px) {
     .skills-section .skill-icon {
+        padding-bottom: 0;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .employment .skill-icon {
         padding-bottom: 0;
         height: 100px;
     }
@@ -1155,8 +1165,21 @@ a.fa.fa-angle-down:focus {
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
-
+.employment .skill-icon img {
+    margin: 0 auto;
+    width: 75px;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
 .skills-section .skill-icon img:hover {
+    -webkit-filter: none;
+    filter: none;
+}
+.employment .skill-icon img:hover {
     -webkit-filter: none;
     filter: none;
 }
@@ -1168,14 +1191,25 @@ a.fa.fa-angle-down:focus {
     .skills-section .skill-icon img#css {
         width: 55px;
     }
-    .skills-section .skill-icon img#sass {
-        margin-top: 15px;
+   
+    .skills-section .skill-icon img#react {
+     
+        width: 55px;
     }
     .skills-section .skill-icon img#js {
         width: 55px;
     }
     .skills-section .skill-icon img#node {
         width: 100px;
+    }
+    .employment .skill-icon img#celebaltech{
+        width: 500px;
+    }
+    .employment .skill-icon img#foreignadmits{
+        width: 500px;
+    }
+    .employment .skill-icon img#omnisvaluations{
+        width: 500px;
     }
 }
 
@@ -1187,6 +1221,18 @@ a.fa.fa-angle-down:focus {
 
 @media screen and (max-width: 450px) {
     .skills-section .skill-icon img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 985px) {
+    .employment .skill-icon img#node {
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .employment .skill-icon img {
         width: 100%;
         height: auto;
     }
@@ -1203,9 +1249,9 @@ a.fa.fa-angle-down:focus {
     line-height: 1.5;
 }
 
-img#starry-logo,
-img#mullen-logo,
-img#nu-logo {
+img#celebal-logo,
+img#foreignadmits-logo,
+img#omni-logo {
     height: auto;
     display: block;
     -webkit-transition: all .3s ease-in-out;
@@ -1213,20 +1259,6 @@ img#nu-logo {
     transition: all .3s ease-in-out
 }
 
-img#starry-logo {
-    width: 180px;
-    margin: 0 auto 10px;
-}
-
-img#mullen-logo {
-    width: 200px;
-    margin: 0 auto 10px;
-}
-
-img#nu-logo {
-    width: 120px;
-    margin: 0 auto;
-}
 
 @media screen and (max-width: 768px) {
     .skills-bar-container {
@@ -1237,10 +1269,13 @@ img#nu-logo {
         font-size: 16px;
         margin-bottom: 0;
     }
-    img#mullen-logo {
+    img#foreignadmits-logo {
         width: 200px;
     }
-    img#nu-logo {
+    img#celebal-logo {
+        width: 200px;
+    }
+    img#omni-logo {
         width: 150px;
     }
 }
@@ -1256,17 +1291,15 @@ img#nu-logo {
     .employment {
         display: block;
         width: 100%;
+       
     }
-    img#nu-logo {
-        width: 120px;
-    }
+   
 }
 
 
 /* ======= RESUME ======= */
 
 #resume {
-    background: url(../img/laptop-blur.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1276,18 +1309,7 @@ img#nu-logo {
 }
 
 #resume .overlay {
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.4)));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
-    /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
-    /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
-    /* IE10+ */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
-    /* W3C */
+ 
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
     /* IE6-9 */
     padding: 80px 0;
@@ -1358,141 +1380,6 @@ a.resume-btn:active {
     margin-bottom: 50px;
     text-transform: lowercase;
 }
-
-#portfolio .portfolio-item-wrapper {
-    width: 31%;
-    display: inline-block;
-    padding: 0 0 5px;
-    margin: 0 1% 30px;
-    vertical-align: top;
-}
-
-@media (max-width: 950px) {
-    #portfolio .portfolio-item-wrapper {
-        width: 47%;
-    }
-}
-
-@media (max-width: 630px) {
-    #portfolio .portfolio-item-wrapper {
-        width: 100%;
-    }
-}
-
-#portfolio .portfolio-item {
-    display: block;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.148438) 0 1px 2px;
-    box-shadow: rgba(0, 0, 0, 0.148438) 0 1px 2px;
-    padding: 0;
-    margin-bottom: 10px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-#portfolio .portfolio-item img {
-    max-width: 100%;
-    width: 100%;
-    opacity: 1.0;
-    transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-}
-
-#portfolio .portfolio-overlay {
-    position: absolute;
-    background-color: rgba(26, 30, 31, 0.85);
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-
-#portfolio .portfolio-info,
-#portfolio .links,
-#portfolio .links a i,
-#portfolio .links a i::after,
-#portfolio .portfolio-overlay {
-    -webkit-transition: all 400ms;
-    -moz-transition: all 400ms;
-    -o-transition: all 400ms;
-    transition: all 400ms;
-}
-
-#portfolio .links {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 36%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    opacity: 0;
-    -webkit-transform: translate(0, -50px);
-    -moz-transform: translate(0, -50px);
-    -ms-transform: translate(0, -50px);
-    -o-transform: translate(0, -50px);
-    transform: translate(0, -50px);
-}
-
-#portfolio .links a i {
-    position: relative;
-    color: #fff;
-    font-size: 24px;
-    margin: 0 13px;
-    z-index: 100;
-}
-
-#portfolio .links a:hover i {
-    color: #fff;
-}
-
-#portfolio .links a i::after {
-    position: absolute;
-    content: "";
-    left: -7px;
-    top: -7px;
-    width: 30px;
-    height: 30px;
-    /*border: 1px solid #fff;*/
-    z-index: -1;
-    border-radius: 50%;
-}
-
-#portfolio .links a:hover i::after {
-    /*background: rgba(255, 255, 255, 0.2);*/
-}
-
-#portfolio .portfolio-info {
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    background-color: #00009C;
-    color: #fff;
-    height: 45px;
-    width: 100%;
-    text-align: center;
-}
-
-#portfolio .portfolio-item:hover .portfolio-overlay,
-#portfolio .portfolio-item:hover .links {
-    opacity: 1;
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0);
-}
-
-#portfolio .portfolio-item:hover .portfolio-info {
-    bottom: 0;
-}
-
-#portfolio .portfolio-info h3 {
-    font-size: 14px;
-    line-height: 45px;
-    font-weight: 400;
-    margin: 0;
 }
 
 
