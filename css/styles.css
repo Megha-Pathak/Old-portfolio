@@ -528,10 +528,14 @@ a.active {
     font-size: 50px;
     font-weight: 300;
     letter-spacing: 2px;
+    
 }
 
 #intro p.subtitle {
-    color: #ddd;
+    color: #fff;
+    text-align: left;
+    margin-left: 40pt;
+  
 }
 
 .intro-content {
@@ -540,6 +544,7 @@ a.active {
     left: 0;
     right: 0;
     z-index: 0;
+   
 }
 .scroll-intro {
     position: absolute;
